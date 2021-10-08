@@ -11,3 +11,17 @@ const toys = [
 	{id: 40, name: 'El gato felix', sellCount: 35}
 ]
 
+for (const iterator of toys) {
+    if(iterator.sellCount>15) {
+        popularToys.push(iterator.name)
+    }
+}
+
+let mayor = 0;
+for (let i=0; i<popularToys.length; i++) {
+    if(popularToys[i]>mayor) {
+        mayor = i;
+    }
+    
+}
+console.log(popularToys)
