@@ -9,10 +9,10 @@ function camisetaIncludes(cualquierArray) {
     let camis = [];
   
     for (let i = 0; i < cualquierArray.length; i++) {
-      if (camis.includes("Camiseta")) {
+      if (cualquierArray.includes("Camiseta")) {
         products.push(cualquierArray[i]);
       }
     }
-    return console.log(camis);
+    return console.log(cualquierArray);
   }
   camisetaIncludes(products)
