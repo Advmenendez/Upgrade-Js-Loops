@@ -6,13 +6,11 @@ Usa la función .includes de javascript. */
 const products = ['Camiseta de Pokemon', 'Pantalón coquinero', 'Gorra de gansta', 'Camiseta de Basket', 'Cinrurón de Orión', 'AC/DC Camiseta']
 
 function camisetaIncludes(cualquierArray) {
-    let camis = [];
+    let camis = "";
   
     for (let i = 0; i < cualquierArray.length; i++) {
-      if (cualquierArray.includes("Camiseta")) {
-        products.push(cualquierArray[i]);
-      }
+      if (cualquierArray[i].includes("Camiseta")) 
+      console.log(cualquierArray[i])
     }
-    return console.log(cualquierArray);
   }
   camisetaIncludes(products)
